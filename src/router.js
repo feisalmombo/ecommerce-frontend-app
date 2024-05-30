@@ -22,9 +22,9 @@ const routes = [
         meta: { public: false } // Mark this route as private
     },
      {
-        path: '/add-product', // namplate on the door
-        name: 'AddProduct', // nickname for the room e.g playroom!
-        component: AddProduct, // actual room behind the door.
+        path: '/add-product', 
+        name: 'AddProduct', 
+        component: AddProduct, 
         meta: { public: false } // Mark this route as private (special sticker on some rooms that says "Private")
     },
     {
