@@ -4,8 +4,9 @@ import ProductList from './components/ProductList.vue';
 import ProductDetails from './components/ProductDetails.vue';
 import AddProduct from './components/AddProduct.vue';
 import EditProduct from './components/EditProduct.vue';
-import Login from './components/Login.vue'; // Import the Login component
-import Register from './components/Register.vue'; // Import the Register component
+import Login from './components/Login.vue'; 
+import Register from './components/Register.vue'; 
+import PageNotFound from './components/PageNotFound';
 
 const routes = [
     {
@@ -43,6 +44,11 @@ const routes = [
         name: 'Register',
         component: Register,
         meta: { public: true } // Mark this route as public
+    },
+    {
+        path: '/:pathMatch(.*)*',
+        name: 'NotFound',
+        component: PageNotFound
     }
 ];
 
