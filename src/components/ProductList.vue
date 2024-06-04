@@ -28,6 +28,7 @@
       async deleteProduct(id) { 
         try {
           await axios.delete(`/products/${id}`);
+
           this.products = this.products.filter(product => product.id !== id);
         } catch (error) {
           console.error("An error occurred while deleting the product:", error);
